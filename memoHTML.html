@@ -1,0 +1,177 @@
+<!------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!-------------------------------------------------------------------- EVERY START HTML ---------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titre de la page -->
+    <title>cours html</title>
+    <!-- Icone de la page -->
+    <link rel="shortcut icon" href="BW.png ">                                   <!--------> Importation du STYLE.CSS
+
+</head>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------ Balises simples / Sans fonction ---------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<section>                                                                   <!--------> Accept Class & ID - Section parents > Div - Pas de fonction spécifique
+
+    <div class="divSansRrien" id="div1">                                            <!--------> Accept Class & ID - Parents de ses enfants - Peut aussi être enfant
+
+        <h1 class="titrePrincipale" id="uniqueTitre"> Titre principal tuto</h1>         <!-------->  Accept Class % ID & (Style) - Plus gros Titre - 1 par page >-- H1/H4--<                                                    
+        <p>Text basic</p>                                                               <!-------->  Accept Class % ID & (Style) - Text simple   
+        <em>Text italique</em>                                                          <!-------->  Accept Class % ID & (Style) - Mets en italique   
+        <STRONG>TEXT EN GRAS</STRONG>                                                   <!-------->  Accept Class % ID & (Style) - Mets en gras   
+        <SPAN>ELEMENT EN SPAN NE REVIENT PAS A LA LIGNE</SPAN>                          <!-------->  Accept Class % ID & (Style) - l'Element s'écrit à la suite   
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.                     <!-------->  Text au pif
+            nim eveniet assumenda molestias consequuntur quaerat quas error 
+            quia? In, rem. Perferendis molestias ea aperiam quia maiores? 
+            Quis iste deleniti consequatur?
+        </p>
+    </div>
+
+    <div class="divImage" id="div2">                                           <!--------> Parents du bloc Image
+        <h2 > photo tuto"</h2>                                                      
+        <img src="BW.png" alt="logo_BW" height="100">                               <!--------> Accept Class & ID % (Style --> height)
+    </div>
+
+    <div class="divUnorderList" id="div3">                                          b
+        <h2> Unorder list part </h2>
+        <ul>
+            <li> Unorder List </li>
+            <li> Unorder List </li>
+            <li> Unorder List </li>
+        </ul>
+    </div>
+    <div>
+        <h2 class="divOrderList" id="div3"> ordered list</h2>
+        <ol>
+            <li>Ordered List </li>
+            <li>Ordered List </li>
+            <li>Ordered List </li>
+            <li>Ordered List </li>
+            <li>Ordered List </li>
+        </ol>
+    </div>
+    <div>
+        <h2> <strong>Tableau tuto </strong> </h2>
+        <table border="1" width="50%" >
+                <!------------------------ Legende ------------------------>
+                <caption> Population d'europe </caption>
+                <!------------------------ En tete ------------------------>
+                <thead>
+                    <tr> 
+                        <th>Pays</th>
+                        <th>Populations</th>
+                    </tr>
+                </thead>
+                <!------------------------ Data du table ------------------------>
+                <tbody,
+                    <tr>
+                        <td>France</td>
+                        <td>66M</td>
+                    </tr>
+                    <tr>
+                        <td>Espagne</td>
+                        <td>57M</td>
+                    </tr>
+                </tbody>
+        </table>
+    </div>
+    <!------------------------ Link clickable ------------------------>
+    <div>
+        <h2> <span>&#9773</span> Lien cliquable </h2>
+        <a href="https://htmlcheatsheet.com/" target="_blank">
+            html cheat sheet
+        </a>
+        <br>
+        <a href="https://www.toptal.com/designers/htmlarrows/symbols/" target="_blank"> Icone html with ref in head</a>
+    </div>
+</section>
+<br>
+<section>
+    <div>
+        <h2>Input test</h2>
+        <!------------------------ Formulaire avec action quand validé ------------------------>
+        <form action="/action.php" method="post">
+
+            <!------------------------ Text input ------------------------>
+            <label for="name"> Nom : </label>
+            <input type="text" placeholder="Entre ton nom" id="name">
+            <br>
+
+            <!------------------------ Numeric input ------------------------>
+            <label for="age"> Age : </label>
+            <input type="number" name="" id="age" min="0" max="10" step="2" value="4">
+            <h2> Test input select </h2>
+            <br><br>
+
+            <!------------------------  Select option ------------------------>
+            <label for="type">Type of account : </label>
+            <select name="" id="type">
+                <option selected value="LIQ"> Liquidite </option>
+                <option selected value="EPA"> Epargne </option>
+                <option selected value="EMP"> Emprunt</option>
+            </select>
+            <br>
+            <br>
+            
+
+            <!------------------------ Radio button ------------------------>
+            <input type="radio" name="Type1" id="LIQ">
+            <label for="LIQ"> Liquidité </label>
+            <input type="radio" name="Type1"  checked id="EPA">
+            <label for="EPA"> Epargne </label>
+            <input type="radio" name="Type1" id="EMPRUNT">
+            <label for="EMPRUNT"> Emprunt </label>
+            <br><br>
+             
+            <!------------------------ Text area ------------------------>
+            <textarea name="textArea" id="textarea" cols="30" rows="3" placeholder="ecris gnegne">check bro</textarea>
+            
+            <br><br>
+            <label><input type="checkbox" accept poto /> Accept poto </label>
+            <br><br>
+
+            <!------------------------ Submit input ------------------------>
+            <input type="submit" value="valider">
+        </form>
+</section>
+<br>
+
+<footer>
+     <a href="mailto:ghfhggghf"> ecrivez a labric</a>
+     <br>
+</footer>
+    
+</body>
+</html>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------ BONNES PRATIQUES ------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!------------------------ Balise Image ------------------------>
+<div>
+    <img src="" alt="">     <!--------> Mettre les images dans des div
+</div>
+
+<!------------------- Pecho Icon FontAwesome ------------------->
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="   <!--------> choper le lien sur CDNJS
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+<i class="fa-solid fa-angle-right"></i>
